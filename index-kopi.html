@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <title>SkoBiksen – Mobil skobutik til virksomheder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:Arial,sans-serif;
+      background:#f5f5f5;
+      color:#222;
+      line-height:1.6;
+    }
+
+    header{
+      background:#1f4f7b;
+      color:white;
+      padding:20px 0;
+    }
+
+    .container{
+      width:90%;
+      max-width:1100px;
+      margin:auto;
+    }
+
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+
+    .logo{
+      font-size:1.7rem;
+      font-weight:bold;
+    }
+
+    nav ul{
+      list-style:none;
+      display:flex;
+      gap:20px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    nav a:hover{
+      text-decoration:underline;
+    }
+
+    .hero{
+      background:#e8f0f7;
+      text-align:center;
+      padding:80px 20px;
+    }
+
+    .hero h1{
+      font-size:2.7rem;
+      color:#1f4f7b;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      font-size:1.1rem;
+      max-width:700px;
+      margin:auto;
+      margin-bottom:30px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:14px 25px;
+      border-radius:5px;
+      text-decoration:none;
+      font-weight:bold;
+      margin:5px;
+      transition:0.3s;
+    }
+
+    .btn-primary{
+      background:#1f4f7b;
+      color:white;
+      border:2px solid #1f4f7b;
+    }
+
+    .btn-primary:hover{
+      background:#163a5c;
+    }
+
+    .btn-outline{
+      border:2px solid #1f4f7b;
+      color:#1f4f7b;
+    }
+
+    .btn-outline:hover{
+      background:#1f4f7b;
+      color:white;
+    }
+
+    section{
+      padding:60px 0;
+      background:white;
+      margin-bottom:10px;
+    }
+
+    section:nth-of-type(even){
+      background:#f0f4f8;
+    }
+
+    h2{
+      font-size:2rem;
+      color:#1f4f7b;
+      margin-bottom:20px;
+    }
+
+    h3{
+      margin-top:25px;
+      margin-bottom:10px;
+      color:#1f4f7b;
+    }
+
+    ul{
+      margin-left:20px;
+      margin-top:10px;
+    }
+
+    li{
+      margin-bottom:8px;
+    }
+
+    form{
+      margin-top:20px;
+    }
+
+    form label{
+      display:block;
+      margin-bottom:5px;
+      font-weight:bold;
+    }
+
+    form input,
+    form textarea{
+      width:100%;
+      padding:12px;
+      border:1px solid #ccc;
+      border-radius:5px;
+      margin-bottom:18px;
+      font-size:1rem;
+    }
+
+    form textarea{
+      resize:vertical;
+    }
+
+    form button{
+      background:#1f4f7b;
+      color:white;
+      border:none;
+      padding:14px 24px;
+      border-radius:5px;
+      font-size:1rem;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    form button:hover{
+      background:#163a5c;
+    }
+
+    footer{
+      background:#1f4f7b;
+      color:white;
+      text-align:center;
+      padding:20px;
+    }
+
+    .contact p{
+      margin-bottom:10px;
+    }
+
+    .contact a{
+      color:#1f4f7b;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    @media(max-width:768px){
+
+      nav{
+        flex-direction:column;
+        gap:15px;
+      }
+
+      nav ul{
+        flex-direction:column;
+        text-align:center;
+      }
+
+      .hero h1{
+        font-size:2rem;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="container">
+
+      <nav>
+
+        <div class="logo">SkoBiksen</div>
+
+        <ul>
+          <li><a href="#forside">Forside</a></li>
+          <li><a href="#virksomhed">Virksomhedsbesøg</a></li>
+          <li><a href="#booking">Booking</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+  <!-- HERO -->
+
+  <section class="hero" id="forside">
+
+    <div class="container">
+
+      <h1>SkoBiksen – Mobil skobutik til virksomheder</h1>
+
+      <p>
+        Vi kommer direkte ud til jeres virksomhed med kvalitetssko til medarbejderne.
+        Medarbejderne prøver skoene på stedet – virksomheden betaler samlet.
+      </p>
+
+      <a href="#booking" class="btn btn-primary">
+        Book virksomhedsbesøg
+      </a>
+
+      <a href="#virksomhed" class="btn btn-outline">
+        Læs mere
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- VIRKSOMHED -->
+
+  <section id="virksomhed">
+
+    <div class="container">
+
+      <h2>Virksomhedsbesøg</h2>
+
+      <p>
+        SkoBiksen tilbyder professionel skoservice direkte på arbejdspladsen.
+        Vi medbringer et udvalg af arbejdssko, komfortsko og kvalitetssko,
+        så medarbejderne kan prøve dem i rolige omgivelser.
+      </p>
+
+      <h3>Sådan fungerer det</h3>
+
+      <ul>
+        <li>I booker et virksomhedsbesøg</li>
+        <li>Vi kommer ud med sko direkte til jer</li>
+        <li>Medarbejderne prøver skoene på stedet</li>
+        <li>Virksomheden betaler samlet</li>
+        <li>I modtager én samlet faktura</li>
+      </ul>
+
+      <h3>Fordele for virksomheden</h3>
+
+      <ul>
+        <li>Bedre komfort for medarbejderne</li>
+        <li>Ingen spildtid på indkøb</li>
+        <li>Professionel rådgivning</li>
+        <li>Nem administration</li>
+        <li>Samlet faktura</li>
+      </ul>
+
+    </div>
+
+  </section>
+
+  <!-- BOOKING -->
+
+  <section id="booking">
+
+    <div class="container">
+
+      <h2>Book et virksomhedsbesøg</h2>
+
+      <p>
+        Udfyld formularen nedenfor – vi vender tilbage inden for 24 timer.
+      </p>
+
+      <!-- FORMULAR -->
+
+      <form action="https://formsubmit.co/gustavrydevej5@gmail.com" method="POST">
+
+        <!-- FORM SETTINGS -->
+
+        <input type="hidden" name="_subject" value="Ny booking fra SkoBiksen">
+
+        <input type="hidden"
+               name="_autoresponse"
+               value="Tak for jeres booking hos SkoBiksen! Vi vender tilbage inden for 24 timer.">
+
+        <input type="hidden" name="_template" value="table">
+
+        <input type="hidden" name="_captcha" value="false">
+
+        <!-- VIGTIGT -->
+        <!-- Skift URL når du får domæne -->
+
+        <input type="hidden"
+               name="_next"
+               value="https://skobiksen.dk/tak.html">
+
+        <!-- FELTER -->
+
+        <label>Virksomhedsnavn</label>
+        <input type="text" name="Virksomhed" required>
+
+        <label>Kontaktperson</label>
+        <input type="text" name="Kontaktperson" required>
+
+        <label>Email</label>
+        <input type="email" name="Email" required>
+
+        <label>Telefon</label>
+        <input type="text" name="Telefon" required>
+
+        <label>Ønsket dato</label>
+        <input type="date" name="Dato" required>
+
+        <label>Besked</label>
+        <textarea name="Besked" rows="5"></textarea>
+
+        <button type="submit">
+          Send booking
+        </button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+  <!-- KONTAKT -->
+
+  <section id="kontakt">
+
+    <div class="container contact">
+
+      <h2>Kontakt</h2>
+
+      <p><strong>SkoBiksen – Mobil skohandel</strong></p>
+
+      <p>📍 Holstebro, Midtjylland</p>
+
+      <p>
+        📞 Telefon:
+        <a href="tel:97000000">97 00 00 00</a>
+      </p>
+
+      <p>
+        📧 Email:
+        <a href="mailto:kontakt@skobiksen.dk">
+          kontakt@skobiksen.dk
+        </a>
+      </p>
+
+      <p>Åbningstider: Man–Fre 09.00–17.00</p>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    © 2026 SkoBiksen – Mobil Skohandel · CVR: 12345678
+
+  </footer>
+
+</body>
+</html>
